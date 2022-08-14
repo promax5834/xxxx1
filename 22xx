@@ -1,0 +1,889 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local hileguiv2 = Instance.new("ScreenGui")
+local Frames = Instance.new("Frame")
+local shopframe = Instance.new("ImageLabel")
+local Inventory = Instance.new("ScrollingFrame")
+local Pets = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Exclusive = Instance.new("ImageLabel")
+local teklacma = Instance.new("ImageButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local box = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local box2 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local box3 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local box4 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local trpleacma = Instance.new("ImageButton")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_7 = Instance.new("TextLabel")
+local deletekanaki = Instance.new("ImageButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local GamepadIcon = Instance.new("ImageLabel")
+local deletesokuna = Instance.new("ImageButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local GamepadIcon_2 = Instance.new("ImageLabel")
+local deleteasdeath = Instance.new("ImageButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local GamepadIcon_3 = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local credits = Instance.new("ImageButton")
+local info = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local heroes = Instance.new("ImageButton")
+local info_2 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local GamepadIcon_4 = Instance.new("ImageLabel")
+local yapmclar = Instance.new("ImageLabel")
+local emekler = Instance.new("ScrollingFrame")
+local main = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local guvenlik = Instance.new("ImageLabel")
+local emekler_2 = Instance.new("ScrollingFrame")
+local main_2 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local onaylama = Instance.new("ImageButton")
+local TextLabel_20 = Instance.new("TextLabel")
+local plr = game.Players.LocalPlayer
+local plrname = plr.Name
+local tevfo = "TevfoStudios"
+local firsthero = "FirstHero3458"
+local Han = "Batuhanc00"
+local memo = "MeoReiz"
+local omer = "omerilhaner_474747"
+--Properties:
+
+hileguiv2.Name = "hileguiv2"
+hileguiv2.Parent = game.CoreGui
+hileguiv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frames.Name = "Frames"
+Frames.Parent = hileguiv2
+Frames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frames.BackgroundTransparency = 1.000
+Frames.Position = UDim2.new(0.260599494, 0, 0.142091855, 0)
+Frames.Size = UDim2.new(0.473379284, 0, 0.682779431, 0)
+Frames.Active = true
+Frames.Draggable = true
+
+shopframe.Name = "shopframe"
+shopframe.Parent = Frames
+shopframe.AnchorPoint = Vector2.new(0.5, 0.5)
+shopframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shopframe.BackgroundTransparency = 1.000
+shopframe.Position = UDim2.new(0.493333906, 0, 0.484126538, 0)
+shopframe.Size = UDim2.new(0.829218924, 0, 0.848330915, 0)
+shopframe.Image = "rbxassetid://9588197216"
+
+Inventory.Name = "Inventory"
+Inventory.Parent = shopframe
+Inventory.Active = true
+Inventory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Inventory.BackgroundTransparency = 1.000
+Inventory.BorderSizePixel = 0
+Inventory.Position = UDim2.new(0.0214577634, 0, 0.202808931, 0)
+Inventory.Size = UDim2.new(0.956118226, 0, 0.768962204, 0)
+Inventory.CanvasSize = UDim2.new(0, 0, 1, 0)
+Inventory.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Inventory.ScrollBarThickness = 8
+
+Pets.Name = "Pets"
+Pets.Parent = Inventory
+Pets.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Pets.BackgroundTransparency = 1.000
+Pets.Position = UDim2.new(0.259306669, 0, 0.749636471, 0)
+Pets.Size = UDim2.new(0.507469654, 0, 0.612669289, 0)
+
+Frame.Parent = Pets
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(-0.185895681, 0, -0.317685395, 0)
+Frame.Size = UDim2.new(1.34192979, 0, 0.57951051, 0)
+
+UIListLayout.Parent = Frame
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0700000003, 0)
+
+ImageLabel.Parent = Pets
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-0.0519067347, 0, -0.921317637, 0)
+ImageLabel.Size = UDim2.new(1.12075698, 0, 0.0259860903, 0)
+ImageLabel.Image = "rbxassetid://9013216912"
+ImageLabel.ImageColor3 = Color3.fromRGB(0, 255, 29)
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0945573151, 0, -7.8418498, 0)
+TextLabel.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Heroes"
+TextLabel.TextColor3 = Color3.fromRGB(98, 255, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Exclusive.Name = "Exclusive"
+Exclusive.Parent = Pets
+Exclusive.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exclusive.BackgroundTransparency = 1.000
+Exclusive.Position = UDim2.new(-0.451485217, 0, -0.874011934, 0)
+Exclusive.Size = UDim2.new(1.89452565, 0, 0.851080537, 0)
+Exclusive.Image = "http://www.roblox.com/asset/?id=10297416042"
+Exclusive.ScaleType = Enum.ScaleType.Fit
+
+teklacma.Name = "teklıacma"
+teklacma.Parent = Exclusive
+teklacma.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teklacma.BackgroundTransparency = 1.000
+teklacma.Position = UDim2.new(0.534626544, 0, 0.621887028, 0)
+teklacma.Size = UDim2.new(0.235732004, 0, 0.243421033, 0)
+teklacma.Image = "rbxassetid://9288896534"
+teklacma.ScaleType = Enum.ScaleType.Fit
+teklacma.MouseButton1Down:Connect(function()
+	-- Script generated by SimppleSpy - credits to exxtremewa#9394
+	-- This generator is IN DEVELOPMENT, not compatible with all types/classes yet
+
+	local args = {
+		[1] = "Exclusive",
+		[2] = "Single",
+	}
+
+	game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggHandler.UnboxEgg:InvokeServer(unpack(args))
+end)
+UIAspectRatioConstraint.Parent = teklacma
+UIAspectRatioConstraint.AspectRatio = 2.921
+
+TextLabel_2.Parent = teklacma
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.37874037, 0, 0.0788373426, 0)
+TextLabel_2.Size = UDim2.new(0.379945904, 0, 0.686885059, 0)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "FREE"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+box.Name = "box"
+box.Parent = Exclusive
+box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box.BackgroundTransparency = 1.000
+box.Position = UDim2.new(0.0264042169, 0, 0.0955115333, 0)
+box.Size = UDim2.new(0.115887932, 0, 0.904488564, 0)
+box.ZIndex = 0
+box.Image = "rbxassetid://10526987522"
+box.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_3.Parent = box
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.428480417, 0, 0.566570997, 0)
+TextLabel_3.Size = UDim2.new(0.569412827, 0, 0.127441615, 0)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "%40"
+TextLabel_3.TextColor3 = Color3.fromRGB(102, 255, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+box2.Name = "box2"
+box2.Parent = Exclusive
+box2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box2.BackgroundTransparency = 1.000
+box2.Position = UDim2.new(0.159999996, 0, 0.0960000008, 0)
+box2.Size = UDim2.new(0.115887932, 0, 0.904488564, 0)
+box2.ZIndex = 0
+box2.Image = "rbxassetid://10527000258"
+box2.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_4.Parent = box2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.428480417, 0, 0.566570997, 0)
+TextLabel_4.Size = UDim2.new(0.569412827, 0, 0.127441615, 0)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "%30"
+TextLabel_4.TextColor3 = Color3.fromRGB(43, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+box3.Name = "box3"
+box3.Parent = Exclusive
+box3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box3.BackgroundTransparency = 1.000
+box3.Position = UDim2.new(0.289999992, 0, 0.0960000008, 0)
+box3.Size = UDim2.new(0.115887932, 0, 0.904488564, 0)
+box3.ZIndex = 0
+box3.Image = "rbxassetid://10527004743"
+box3.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_5.Parent = box3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.428480417, 0, 0.566570997, 0)
+TextLabel_5.Size = UDim2.new(0.569412827, 0, 0.127441615, 0)
+TextLabel_5.Font = Enum.Font.FredokaOne
+TextLabel_5.Text = "%10"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 23, 26)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+box4.Name = "box4"
+box4.Parent = Exclusive
+box4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box4.BackgroundTransparency = 1.000
+box4.Position = UDim2.new(0.414999992, 0, 0.150000006, 0)
+box4.Size = UDim2.new(0.130838722, 0, 0.850502014, 0)
+box4.ZIndex = 0
+box4.Image = "rbxassetid://10527011176"
+box4.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_6.Parent = box4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.403594792, 0, 0.583678603, 0)
+TextLabel_6.Size = UDim2.new(0.730070233, 0, 0.139178917, 0)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "???"
+TextLabel_6.TextColor3 = Color3.fromRGB(102, 255, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+trpleacma.Name = "trıpleacma"
+trpleacma.Parent = Exclusive
+trpleacma.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+trpleacma.BackgroundTransparency = 1.000
+trpleacma.Position = UDim2.new(0.750751257, 0, 0.621887028, 0)
+trpleacma.Size = UDim2.new(0.235732004, 0, 0.243421033, 0)
+trpleacma.Image = "rbxassetid://9288896534"
+trpleacma.ScaleType = Enum.ScaleType.Fit
+teklacma.MouseButton1Down:Connect(function()
+	-- Script generated by SimppleSpy - credits to exxtremewa#9394
+	-- This generator is IN DEVELOPMENT, not compatible with all types/classes yet
+
+	local args = {
+		[1] = "Exclusive",
+		[2] = "Triple",
+	}
+
+	game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggHandler.UnboxEgg:InvokeServer(unpack(args))
+end)
+UIAspectRatioConstraint_2.Parent = trpleacma
+UIAspectRatioConstraint_2.AspectRatio = 2.921
+
+TextLabel_7.Parent = trpleacma
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.37874037, 0, 0.0788373426, 0)
+TextLabel_7.Size = UDim2.new(0.379945904, 0, 0.686885059, 0)
+TextLabel_7.Font = Enum.Font.FredokaOne
+TextLabel_7.Text = "Free"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+deletekanaki.Name = "deletekanaki"
+deletekanaki.Parent = Exclusive
+deletekanaki.AnchorPoint = Vector2.new(0.5, 0.5)
+deletekanaki.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+deletekanaki.BackgroundTransparency = 1.000
+deletekanaki.Position = UDim2.new(0.0819308162, 0, 0.837653756, 0)
+deletekanaki.Size = UDim2.new(0.100508064, 0, 0.242988706, 0)
+deletekanaki.Image = "rbxassetid://10168356404"
+deletekanaki.MouseButton1Down:Connect(function()
+	deletekanaki.Visible = false
+	local args = {
+		[1] = "Kanaki",
+	}
+
+	game:GetService("ReplicatedStorage").EggEvents.DeletePet:FireServer(unpack(args))
+end)
+UIAspectRatioConstraint_3.Parent = deletekanaki
+UIAspectRatioConstraint_3.AspectRatio = 1.020
+
+GamepadIcon.Name = "GamepadIcon"
+GamepadIcon.Parent = deletekanaki
+GamepadIcon.AnchorPoint = Vector2.new(0.5, 0.5)
+GamepadIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamepadIcon.BackgroundTransparency = 1.000
+GamepadIcon.Position = UDim2.new(0.780851364, 10, -0.0621746331, 0)
+GamepadIcon.Size = UDim2.new(0.877596319, 0, 0.849012434, 0)
+GamepadIcon.SizeConstraint = Enum.SizeConstraint.RelativeYY
+GamepadIcon.Visible = false
+GamepadIcon.Image = "http://www.roblox.com/asset/?id=4440197483"
+GamepadIcon.ScaleType = Enum.ScaleType.Fit
+
+deletesokuna.Name = "deletesokuna"
+deletesokuna.Parent = Exclusive
+deletesokuna.AnchorPoint = Vector2.new(0.5, 0.5)
+deletesokuna.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+deletesokuna.BackgroundTransparency = 1.000
+deletesokuna.Position = UDim2.new(0.215949297, 0, 0.837653756, 0)
+deletesokuna.Size = UDim2.new(0.100508064, 0, 0.242988706, 0)
+deletesokuna.Image = "rbxassetid://10168356404"
+deletesokuna.MouseButton1Down:Connect(function()
+	deletesokuna.Visible = false
+	local args = {
+		[1] = "Sokuna",
+	}
+
+	game:GetService("ReplicatedStorage").EggEvents.DeletePet:FireServer(unpack(args))
+end)
+UIAspectRatioConstraint_4.Parent = deletesokuna
+UIAspectRatioConstraint_4.AspectRatio = 1.020
+
+GamepadIcon_2.Name = "GamepadIcon"
+GamepadIcon_2.Parent = deletesokuna
+GamepadIcon_2.AnchorPoint = Vector2.new(0.5, 0.5)
+GamepadIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamepadIcon_2.BackgroundTransparency = 1.000
+GamepadIcon_2.Position = UDim2.new(0.780851364, 10, -0.0621746331, 0)
+GamepadIcon_2.Size = UDim2.new(0.877596319, 0, 0.849012434, 0)
+GamepadIcon_2.SizeConstraint = Enum.SizeConstraint.RelativeYY
+GamepadIcon_2.Visible = false
+GamepadIcon_2.Image = "http://www.roblox.com/asset/?id=4440197483"
+GamepadIcon_2.ScaleType = Enum.ScaleType.Fit
+
+deleteasdeath.Name = "deleteasdeath"
+deleteasdeath.Parent = Exclusive
+deleteasdeath.AnchorPoint = Vector2.new(0.5, 0.5)
+deleteasdeath.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+deleteasdeath.BackgroundTransparency = 1.000
+deleteasdeath.Position = UDim2.new(0.34743911, 0, 0.837653756, 0)
+deleteasdeath.Size = UDim2.new(0.100508064, 0, 0.242988706, 0)
+deleteasdeath.Image = "rbxassetid://10168356404"
+deleteasdeath.MouseButton1Down:Connect(function()
+	deleteasdeath.Visible = false
+	local args = {
+		[1] = "Asdeath",
+	}
+
+	game:GetService("ReplicatedStorage").EggEvents.DeletePet:FireServer(unpack(args))
+end)
+UIAspectRatioConstraint_5.Parent = deleteasdeath
+UIAspectRatioConstraint_5.AspectRatio = 1.020
+
+GamepadIcon_3.Name = "GamepadIcon"
+GamepadIcon_3.Parent = deleteasdeath
+GamepadIcon_3.AnchorPoint = Vector2.new(0.5, 0.5)
+GamepadIcon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamepadIcon_3.BackgroundTransparency = 1.000
+GamepadIcon_3.Position = UDim2.new(0.780851364, 10, -0.0621746331, 0)
+GamepadIcon_3.Size = UDim2.new(0.877596319, 0, 0.849012434, 0)
+GamepadIcon_3.SizeConstraint = Enum.SizeConstraint.RelativeYY
+GamepadIcon_3.Visible = false
+GamepadIcon_3.Image = "http://www.roblox.com/asset/?id=4440197483"
+GamepadIcon_3.ScaleType = Enum.ScaleType.Fit
+
+Frame_2.Parent = shopframe
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(-0.102316178, 0, 0.180276155, 0)
+Frame_2.Size = UDim2.new(0.101752944, 0, 0.662896395, 0)
+
+UIListLayout_2.Parent = Frame_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0.0199999996, 0)
+
+UIAspectRatioConstraint_6.Parent = Frame_2
+UIAspectRatioConstraint_6.AspectRatio = 0.204
+
+credits.Name = "credits"
+credits.Parent = Frame_2
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(-0.774717093, 0, 0.340753883, 0)
+credits.Size = UDim2.new(0.864315689, 0, 0.177069396, 0)
+credits.Image = "rbxassetid://9576251068"
+credits.ScaleType = Enum.ScaleType.Fit
+credits.MouseButton1Down:Connect(function()
+	yapmclar.Visible = true
+end)
+info.Name = "info"
+info.Parent = credits
+info.AnchorPoint = Vector2.new(0.5, 0.5)
+info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+info.BackgroundTransparency = 1.000
+info.Position = UDim2.new(1.33577847, 0, 0.535608172, 0)
+info.Size = UDim2.new(1.50280714, 0, 0.38109687, 0)
+info.Visible = false
+info.ZIndex = 9999
+info.Image = "rbxassetid://10155302208"
+info.ScaleType = Enum.ScaleType.Fit
+info.SliceCenter = Rect.new(100, 100, 100, 100)
+info.SliceScale = 0.120
+
+TextLabel_8.Parent = info
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.0408098549, 0, 0.0494321734, 0)
+TextLabel_8.Size = UDim2.new(0.884288371, 0, 0.887259364, 0)
+TextLabel_8.ZIndex = 999999999
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "Heroes"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+heroes.Name = "heroes"
+heroes.Parent = Frame_2
+heroes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+heroes.BackgroundTransparency = 1.000
+heroes.Position = UDim2.new(-0.774717093, 0, 0.340753883, 0)
+heroes.Size = UDim2.new(0.864315689, 0, 0.177069396, 0)
+heroes.Image = "rbxassetid://10308933847"
+heroes.ScaleType = Enum.ScaleType.Fit
+heroes.MouseButton1Down:Connect(function()
+	shopframe.Visible = true
+	yapmclar.Visible = false
+end)
+info_2.Name = "info"
+info_2.Parent = heroes
+info_2.AnchorPoint = Vector2.new(0.5, 0.5)
+info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+info_2.BackgroundTransparency = 1.000
+info_2.Position = UDim2.new(1.33577847, 0, 0.535608172, 0)
+info_2.Size = UDim2.new(1.50280714, 0, 0.38109687, 0)
+info_2.Visible = false
+info_2.ZIndex = 9999
+info_2.Image = "rbxassetid://10155302208"
+info_2.ScaleType = Enum.ScaleType.Fit
+info_2.SliceCenter = Rect.new(100, 100, 100, 100)
+info_2.SliceScale = 0.120
+
+TextLabel_9.Parent = info_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0408098549, 0, 0.0494321734, 0)
+TextLabel_9.Size = UDim2.new(0.884288371, 0, 0.887259364, 0)
+TextLabel_9.ZIndex = 999999999
+TextLabel_9.Font = Enum.Font.FredokaOne
+TextLabel_9.Text = "Heroes"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = shopframe
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.300060779, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0.39922756, 0, 0.124496482, 0)
+TextLabel_10.Font = Enum.Font.FredokaOne
+TextLabel_10.Text = "Spesial  Shop"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+ImageButton.Parent = shopframe
+ImageButton.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.989243627, 0, 0.123782322, 0)
+ImageButton.Size = UDim2.new(0.0896585882, 0, 0.155187145, 0)
+ImageButton.Image = "rbxassetid://10168356404"
+ImageButton.MouseButton1Down:Connect(function()
+	Frames.Visible = false
+end)
+UIAspectRatioConstraint_7.Parent = ImageButton
+UIAspectRatioConstraint_7.AspectRatio = 1.020
+
+GamepadIcon_4.Name = "GamepadIcon"
+GamepadIcon_4.Parent = ImageButton
+GamepadIcon_4.AnchorPoint = Vector2.new(0.5, 0.5)
+GamepadIcon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamepadIcon_4.BackgroundTransparency = 1.000
+GamepadIcon_4.Position = UDim2.new(0.780851364, 10, -0.0621746331, 0)
+GamepadIcon_4.Size = UDim2.new(0.877596319, 0, 0.849012434, 0)
+GamepadIcon_4.SizeConstraint = Enum.SizeConstraint.RelativeYY
+GamepadIcon_4.Visible = false
+GamepadIcon_4.Image = "http://www.roblox.com/asset/?id=4440197483"
+GamepadIcon_4.ScaleType = Enum.ScaleType.Fit
+
+yapmclar.Name = "yapımcılar"
+yapmclar.Parent = Frames
+yapmclar.AnchorPoint = Vector2.new(0.5, 0.5)
+yapmclar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yapmclar.BackgroundTransparency = 1.000
+yapmclar.Position = UDim2.new(0.516744554, 0, 0.470230877, 0)
+yapmclar.Size = UDim2.new(0.876040339, 0, 0.876122236, 0)
+yapmclar.ZIndex = 99
+yapmclar.Image = "rbxassetid://9588197216"
+
+emekler.Name = "emekler"
+emekler.Parent = yapmclar
+emekler.Active = true
+emekler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+emekler.BackgroundTransparency = 1.000
+emekler.BorderSizePixel = 0
+emekler.Position = UDim2.new(0.0214577634, 0, 0.202808931, 0)
+emekler.Size = UDim2.new(0.956118226, 0, 0.768962204, 0)
+emekler.CanvasSize = UDim2.new(0, 0, 1, 0)
+emekler.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+emekler.ScrollBarThickness = 8
+
+main.Name = "main"
+main.Parent = emekler
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.259306669, 0, 0.749636471, 0)
+main.Size = UDim2.new(0.507469654, 0, 0.612669289, 0)
+
+Frame_3.Parent = main
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.Position = UDim2.new(-0.185895681, 0, -0.317685395, 0)
+Frame_3.Size = UDim2.new(1.34192979, 0, 0.57951051, 0)
+
+UIListLayout_3.Parent = Frame_3
+UIListLayout_3.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0.0700000003, 0)
+
+ImageLabel_2.Parent = main
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(-0.0519067347, 0, -0.921317637, 0)
+ImageLabel_2.Size = UDim2.new(1.12075698, 0, 0.0259860903, 0)
+ImageLabel_2.Image = "rbxassetid://9013216912"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel_11.Parent = ImageLabel_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.0945573151, 0, -7.8418498, 0)
+TextLabel_11.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_11.Font = Enum.Font.FredokaOne
+TextLabel_11.Text = "Yapanlar"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = ImageLabel_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(-0.375629604, 0, 6.60806704, 0)
+TextLabel_12.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_12.Font = Enum.Font.FredokaOne
+TextLabel_12.Text = "Promax"
+TextLabel_12.TextColor3 = Color3.fromRGB(26, 255, 236)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = ImageLabel_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.393767178, 0, 6.60806704, 0)
+TextLabel_13.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_13.Font = Enum.Font.FredokaOne
+TextLabel_13.Text = "THAN"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = ImageLabel_2
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.41086489, 0, 19.7200279, 0)
+TextLabel_14.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_14.Font = Enum.Font.FredokaOne
+TextLabel_14.Text = "Coder"
+TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = ImageLabel_2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(-0.379904032, 0, 19.9876194, 0)
+TextLabel_15.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_15.Font = Enum.Font.FredokaOne
+TextLabel_15.Text = "Coder"
+TextLabel_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = yapmclar
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.300060779, 0, 0, 0)
+TextLabel_16.Size = UDim2.new(0.39922756, 0, 0.124496482, 0)
+TextLabel_16.Font = Enum.Font.FredokaOne
+TextLabel_16.Text = "Owners"
+TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+guvenlik.Name = "guvenlik"
+guvenlik.Parent = Frames
+guvenlik.AnchorPoint = Vector2.new(0.5, 0.5)
+guvenlik.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+guvenlik.BackgroundTransparency = 1.000
+guvenlik.Position = UDim2.new(0.550056338, 0, 0.468841314, 0)
+guvenlik.Size = UDim2.new(1.31946659, 0, 1.07344055, 0)
+guvenlik.ZIndex = 9999
+guvenlik.Image = "rbxassetid://9588197216"
+
+emekler_2.Name = "emekler"
+emekler_2.Parent = guvenlik
+emekler_2.Active = true
+emekler_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+emekler_2.BackgroundTransparency = 1.000
+emekler_2.BorderSizePixel = 0
+emekler_2.Position = UDim2.new(0.0214577634, 0, 0.202808931, 0)
+emekler_2.Size = UDim2.new(0.956118226, 0, 0.768962204, 0)
+emekler_2.CanvasSize = UDim2.new(0, 0, 1, 0)
+emekler_2.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+emekler_2.ScrollBarThickness = 8
+
+main_2.Name = "main"
+main_2.Parent = emekler_2
+main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main_2.BackgroundTransparency = 1.000
+main_2.Position = UDim2.new(0.259306669, 0, 0.749636471, 0)
+main_2.Size = UDim2.new(0.507469654, 0, 0.612669289, 0)
+
+Frame_4.Parent = main_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.Position = UDim2.new(-0.185895681, 0, -0.317685395, 0)
+Frame_4.Size = UDim2.new(1.34192979, 0, 0.57951051, 0)
+
+UIListLayout_4.Parent = Frame_4
+UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0.0700000003, 0)
+
+ImageLabel_3.Parent = main_2
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(-0.0519067347, 0, -0.921317637, 0)
+ImageLabel_3.Size = UDim2.new(1.12075698, 0, 0.0259860903, 0)
+ImageLabel_3.Image = "rbxassetid://9013216912"
+ImageLabel_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel_17.Parent = ImageLabel_3
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.0945573151, 0, -7.8418498, 0)
+TextLabel_17.Size = UDim2.new(0.772277176, 0, 6.9904418, 0)
+TextLabel_17.Font = Enum.Font.FredokaOne
+TextLabel_17.Text = "Key"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+TextLabel_18.Parent = ImageLabel_3
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.0945573375, 0, 1.73511684, 0)
+TextLabel_18.Size = UDim2.new(0.772277176, 0, 24.4391251, 0)
+TextLabel_18.Font = Enum.Font.FredokaOne
+TextLabel_18.Text = "Eğer Promax size kullanma izni vermediyse kullanamazsınız !!!"
+TextLabel_18.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = ImageLabel_3
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(-0.340617388, 0, 1.73511362, 0)
+TextLabel_19.Size = UDim2.new(0.482435495, 0, 28.3440666, 0)
+TextLabel_19.Font = Enum.Font.FredokaOne
+TextLabel_19.Text = "İzin almak için =PROMAX#6386"
+TextLabel_19.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+onaylama.Name = "onaylama"
+onaylama.Parent = main_2
+onaylama.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+onaylama.Position = UDim2.new(0.298365533, 0, -0.202794075, 0)
+onaylama.Size = UDim2.new(0, 122, 0, 86)
+onaylama.Image = "http://www.roblox.com/asset/?id=10590448308"
+onaylama.MouseButton1Down:Connect(function()
+	if plrname == tevfo or plrname == firsthero or plrname == memo or plrname == Han or plrname == omer  then
+		guvenlik.Visible = false
+	else
+		guvenlik.Visible = true	
+	end
+end)
+TextLabel_20.Parent = guvenlik
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(0.300060779, 0, 0, 0)
+TextLabel_20.Size = UDim2.new(0.39922756, 0, 0.124496482, 0)
+TextLabel_20.Font = Enum.Font.FredokaOne
+TextLabel_20.Text = "security system"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 0, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+-- Scripts:
+
+local function SINEPP_fake_script() -- teklacma.Button2Script 
+	local script = Instance.new('LocalScript', teklacma)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(SINEPP_fake_script)()
+local function AIEKJX_fake_script() -- teklacma.BuyScript 
+	local script = Instance.new('LocalScript', teklacma)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(AIEKJX_fake_script)()
+local function GGBPRF_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(GGBPRF_fake_script)()
+local function UWHLGZ_fake_script() -- trpleacma.Button2Script 
+	local script = Instance.new('LocalScript', trpleacma)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(UWHLGZ_fake_script)()
+local function ECGI_fake_script() -- trpleacma.BuyScript 
+	local script = Instance.new('LocalScript', trpleacma)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(ECGI_fake_script)()
+local function HNALVA_fake_script() -- deletekanaki.Button2Script 
+	local script = Instance.new('LocalScript', deletekanaki)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(HNALVA_fake_script)()
+local function NUKJDP_fake_script() -- deletekanaki.LocalScript 
+	local script = Instance.new('LocalScript', deletekanaki)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(NUKJDP_fake_script)()
+local function CHLH_fake_script() -- deletesokuna.Button2Script 
+	local script = Instance.new('LocalScript', deletesokuna)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(CHLH_fake_script)()
+local function SVABW_fake_script() -- deletesokuna.LocalScript 
+	local script = Instance.new('LocalScript', deletesokuna)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(SVABW_fake_script)()
+local function MTKGCT_fake_script() -- deleteasdeath.Button2Script 
+	local script = Instance.new('LocalScript', deleteasdeath)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(MTKGCT_fake_script)()
+local function LTXJ_fake_script() -- deleteasdeath.LocalScript 
+	local script = Instance.new('LocalScript', deleteasdeath)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(LTXJ_fake_script)()
+local function ZARWKS_fake_script() -- credits.Button2Script 
+	local script = Instance.new('LocalScript', credits)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(ZARWKS_fake_script)()
+local function FZDWEG_fake_script() -- credits.Button1Script 
+	local script = Instance.new('LocalScript', credits)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(FZDWEG_fake_script)()
+local function DYBLXW_fake_script() -- credits.hover 
+	local script = Instance.new('LocalScript', credits)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(DYBLXW_fake_script)()
+local function UIDT_fake_script() -- heroes.Button2Script 
+	local script = Instance.new('LocalScript', heroes)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(UIDT_fake_script)()
+local function YLJPLIB_fake_script() -- heroes.Button1Script 
+	local script = Instance.new('LocalScript', heroes)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(YLJPLIB_fake_script)()
+local function FZWDXYS_fake_script() -- heroes.hover 
+	local script = Instance.new('LocalScript', heroes)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(FZWDXYS_fake_script)()
+local function ZIEHJ_fake_script() -- ImageButton.Button2Script 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(ZIEHJ_fake_script)()
+local function FXJQ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	-- Decompiling is disabled
+end
+coroutine.wrap(FXJQ_fake_script)()
