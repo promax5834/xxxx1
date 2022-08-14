@@ -76,7 +76,7 @@ local plr = game.Players.LocalPlayer
 local plrname = plr.Name
 local tevfo = "TevfoStudios"
 local firsthero = "FirstHero3458"
-local Han = "Batuhanc00"
+local Han = "THHan0"
 local memo = "MomoReiz"
 local omer = "omerilhaner_474747"
 --Properties:
